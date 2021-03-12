@@ -10,7 +10,7 @@ public class Map {
 	public static void main(String[] args) {
 		Consumer<String> print = System.out::print;
 		
-		List<String> marcas = Arrays.asList("BMW ", "Audi ", "Honda ");
+		List<String> marcas = Arrays.asList("BMW ", "Audi ", "Honda ", "Fiat");
 		
 		marcas.stream().map(m -> m.toUpperCase()).forEach(print);
 		
@@ -24,6 +24,8 @@ public class Map {
 			.map(primeiraLetra)
 			.map(Utilitarios::grito)
 			.forEach(print);
+		
+		
 	}
 
 }
