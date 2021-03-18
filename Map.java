@@ -12,7 +12,9 @@ public class Map {
 		
 		List<String> marcas = Arrays.asList("BMW ", "Audi ", "Honda ");
 		
-		marcas.stream().map(m -> m.toUpperCase()).forEach(print);
+		marcas.stream()
+			.map(m -> m.toUpperCase())
+			.forEach(print);
 		
 		//UnaryOperator<String> maiuscula = n -> n.toUpperCase();
 		UnaryOperator<String> primeiraLetra = n -> n.charAt(0) + "";
