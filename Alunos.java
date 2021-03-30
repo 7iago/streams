@@ -1,16 +1,16 @@
 package streams;
 
-public class Aluno {
-	final String nome;
-	final double nota;
-	final boolean bomCoportamento;
+public class Alunos {
+	public final String nome;
+	public final double nota;
+	public final boolean bomCoportamento;
 	
-	public Aluno(String nome, double nota) {
+	public Alunos(String nome, double nota) {
 		this(nome, nota, true);
 	}
 	
 	
-	public Aluno(String nome, double nota, boolean bomComportamento) {
+	public Alunos(String nome, double nota, boolean bomComportamento) {
 		this.nome = nome;
 		this.nota = nota;
 		this.bomCoportamento = bomComportamento;
@@ -44,7 +44,7 @@ public class Aluno {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Aluno other = (Aluno) obj;
+		Alunos other = (Alunos) obj;
 		if (bomCoportamento != other.bomCoportamento)
 			return false;
 		if (nome == null) {
